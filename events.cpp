@@ -94,7 +94,7 @@ void Events::initializeModel()
     ui->tableView->resizeColumnToContents(4);
 
 }
-
+//Append
 void Events::on_pushButton_clicked()
 {
     QString SqlText("select * from events %1 order by id desc"),p,d1,d2,f1,f2;
