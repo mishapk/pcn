@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/addComments.js" async=""></script><script src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/highlight.js" async=""></script><script src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/lor.js" async=""></script><script src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/plugins.js" async=""></script>
+<link href="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/combined.css">
+
+<script type="text/javascript">
+  /*!
+  * $script.js Async loader & dependency manager
+  * https://github.com/ded/script.js
+  * (c) Dustin Diaz, Jacob Thornton 2011
+  * License: MIT
+  */
+(function(e,d,f){typeof f.module!="undefined"&&f.module.exports?f.module.exports=d():typeof f.define!="undefined"&&f.define=="function"&&f.define.amd?define(e,d):f[e]=d()
+})("$script",function(){function y(f,e){for(var h=0,g=f.length;
+h<g;
+++h){if(!e(f[h])){return E
+}}return 1
+}function x(d,c){y(d,function(b){return !c(b)
+})
+}function w(p,k,h){function c(b){return b.call?b():K[b]
+}function q(){if(!--d){K[e]=1,f&&f();
+for(var b in I){y(b.split("|"),c)&&!x(I[b],c)&&(I[b]=[])
+}}}p=p[D]?p:[p];
+var g=k&&k.call,f=g?k:h,e=g?p.join(""):k,d=p.length;
+return setTimeout(function(){x(p,function(b){if(G[b]){return e&&(J[e]=1),G[b]==2&&q()
+}G[b]=1,e&&(J[e]=1),v(!L.test(b)&&H?H+b+".js":b,q)
+})
+},0),w
+}function v(h,g){var b=N.createElement("script"),a=E;
+b.onload=b.onerror=b[z]=function(){if(b[B]&&!/^c|loade/.test(b[B])||a){return
+}b.onload=b[z]=null,a=1,G[h]=2,g()
+},b.async=1,b.src=h,M.insertBefore(b,M.firstChild)
+}var N=document,M=N.getElementsByTagName("head")[0],L=/^https?:\/\//,K={},J={},I={},H,G={},F="string",E=!1,D="push",C="DOMContentLoaded",B="readyState",A="addEventListener",z="onreadystatechange";
+return !N[B]&&N[A]&&(N[A](C,function u(){N.removeEventListener(C,u,E),N[B]="complete"
+},E),N[B]="loading"),w.get=v,w.order=function(f,e,h){(function g(a){a=f.shift(),f.length?w(a,g):w(a,e,h)
+})()
+},w.path=function(b){H=b
+},w.ready=function(f,d,h){f=f[D]?f:[f];
+var g=[];
+return !x(f,function(b){K[b]||g[D](b)
+})&&y(f,function(b){return K[b]
+})?d():!function(b){I[b]=I[b]||[],I[b][D](d),h&&h(g)
+}(f.join("|")),w
+},w
+},this);</script>
+
+  <!--[if lt IE 9]>
+<script src="/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+  if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='/js/jquery-1.10.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+</script>
+
+<script type="text/javascript">
+  $script('/js/plugins.js', 'plugins');
+  $script('/js/lor.js?20140306-2330', 'lorjs');
+  $script('/js/highlight.pack.js', function() { hljs.initHighlightingOnLoad(); });
+</script>
+<title>QT текст компонетов вставить в TR в дизанере - Development - Форум</title>
+<meta property="og:title" content="QT текст компонетов вставить в TR в дизанере">
+
+<meta property="og:image" content="http://www.linux.org.ru/img/good-penguin.jpg">
+  <meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@wwwlinuxorgru">
+<meta property="og:description" content="Подскажите как текст компонетов созданных в дизайнере вписать в функцию tr(&quot;переводимый текст&quot;);?  
+Можно ли это сделать при помощи дизанера или прийдется тексты всех компонетов переписывать в ручную в конструкторе?">
+<meta property="og:url" content="http://www.linux.org.ru/forum/development/10269024">
+
+<link rel="canonical" href="http://www.linux.org.ru/forum/development/10269024">
+
+<link rel="Previous" id="PrevLink" href="http://www.linux.org.ru/forum/development/10268891" title="YouCompleteMe не может найти completer">
+<link rel="Next" id="NextLink" href="http://www.linux.org.ru/forum/development/10269072" title="Bean Validation: validateValue">
+<link rel="alternate" title="Comments RSS" href="http://www.linux.org.ru/forum/development/10269024?output=rss" type="application/rss+xml">
+<script type="text/javascript">
+  $script.ready('lorjs', function() { initNextPrevKeys(); });
+  
+    $script('/js/addComments.js');
+  </script>
+<link rel="search" title="Search L.O.R." href="http://www.linux.org.ru/search.jsp">
+
+<!-- base href="http://www.linux.org.ru/" -->
+<link rel="shortcut icon" href="http://www.linux.org.ru/favicon.ico" type="image/x-icon">
+<link rel="yandex-tableau-widget" href="http://www.linux.org.ru/tango/manifest.json">
+<meta name="viewport" content="initial-scale=1.0">
+</head>
+<body>
+<div id="hd">
+  <a id="sitetitle" href="http://www.linux.org.ru/">LINUX.ORG.RU</a>
+
+  <div class="menu">
+    <div id="loginGreating">
+      <a style="text-decoration: none" href="http://www.linux.org.ru/people/mishapk/profile">mishapk</a>
+      </div>
+
+    <ul>
+      <li><a href="http://www.linux.org.ru/news/">Новости</a></li>
+      <li><a href="http://www.linux.org.ru/gallery/">Галерея</a></li>
+
+      <li><a href="http://www.linux.org.ru/forum/">Форум</a></li>
+      <li><a href="http://www.linux.org.ru/tracker/">Трекер</a></li>
+      <li><a href="http://www.linux.org.ru/wiki/">Wiki</a></li>
+      <li>
+          <a href="http://www.linux.org.ru/notifications">Уведомления <span id="main_events_count">(65)</span></a>
+  </li>
+      <li><a href="http://www.linux.org.ru/search.jsp">Поиск</a></li>
+    </ul>
+  </div>
+</div>
+<div style="clear: both"></div>
+<!-- Rating@Mail.ru counter -->
+    <img src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/counter_002.gif" alt="" style="position: absolute" height="1" width="1">
+    <!-- //Rating@Mail.ru counter -->
+<div id="bd">
+<div class="messages" itemscope="" itemtype="http://schema.org/Article">
+
+<!-- 10269024  -->
+<article class="msg" id="topic-10269024">
+<header>
+    <div class="msg-top-header">
+    <span itemprop="articleSection">
+      <a href="http://www.linux.org.ru/forum/">Форум</a> -
+      <a href="http://www.linux.org.ru/forum/development/">Development</a>
+      </span>
+      
+    </div>
+
+    <h1 itemprop="headline">
+      <a href="http://www.linux.org.ru/forum/development/10269024">QT текст компонетов вставить в TR в дизанере</a>
+      </h1>
+
+    <p class="tags"><i class="icon-tag"></i>&nbsp;<a class="tag" rel="tag" href="http://www.linux.org.ru/tag/qt">qt</a></p></header>
+
+  <div class="msg-container">
+
+  <div class="fav-buttons">
+    <a title="В избранное" id="favs_button" href="#"><i class="icon-star"></i></a><br><span id="favs_count">0</span><br>
+    <a title="Не отслеживать" class="selected" id="memories_button" href="#"><i class="icon-eye"></i></a><br><span id="memories_count">1</span>
+  </div>
+
+  <div class="msg_body">
+  <div itemprop="articleBody">
+      <p>Подскажите как текст компонетов созданных в дизайнере вписать в функцию tr(«переводимый текст»);?<br>
+Можно ли это сделать при помощи дизанера или прийдется тексты всех компонетов переписывать в ручную в конструкторе?</p></div>
+<footer>
+
+<div class="userpic"><img class="photo" src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/a69ac74e63fcdc09e2d8a1ae36cadb60.jpeg" alt="" height="150" width="150"></div><div class="sign">
+  <a rel="author" itemprop="creator" href="http://www.linux.org.ru/people/mishapk/profile">mishapk</a> <span class="stars"></span><br>
+  <time datetime="2014-03-10T20:09:05.029+04:00" itemprop="dateCreated">10.03.2014 20:09:05</time><span class="sign_more">
+  <br>
+  Последнее исправление: cetjs2 <time datetime="2014-03-10T20:29:21.029+04:00">10.03.2014 20:29:21</time>
+    (всего <a href="http://www.linux.org.ru/forum/development/10269024/history">исправлений: 1</a>)
+  </span>
+</div>
+</footer>
+
+    <div class="reply">
+          <div class="social-buttons">
+            <a target="_blank" style="text-decoration: none" href="http://juick.com/post?body=*LOR+QT+%D1%82%D0%B5%D0%BA%D1%81%D1%82+%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2+%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B2+TR+%D0%B2+%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5+http%3A%2F%2Fwww.linux.org.ru%2Fforum%2Fdevelopment%2F10269024">
+              <img src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/juick.png" alt="Juick" title="Share on Juick" height="16" width="16">
+            </a>
+
+            <a target="_blank" style="text-decoration: none" href="https://twitter.com/intent/tweet?text=QT+%D1%82%D0%B5%D0%BA%D1%81%D1%82+%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2+%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B2+TR+%D0%B2+%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5&amp;url=http%3A%2F%2Fwww.linux.org.ru%2Fforum%2Fdevelopment%2F10269024&amp;hashtags=%D0%BB%D0%BE%D1%80">
+              <img src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/twitter.png" alt="Share on Twitter" title="Share on Twitter" height="16" width="16">
+            </a>
+
+            <a target="_blank" style="text-decoration: none" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.linux.org.ru%2Fforum%2Fdevelopment%2F10269024">
+              <img src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/google-plus-icon.png" alt="Share on Google Plus" title="Share on Google Plus" height="16" width="16">
+            </a>
+          </div>
+          <ul id="topicMenu">
+          <li><a href="http://www.linux.org.ru/comment-message.jsp?topic=10269024">Ответить<span class="hideon-phone"> на это сообщение</span></a></li>
+            <li><a href="http://www.linux.org.ru/resolve.jsp?msgid=10269024&amp;resolve=yes">Отметить как решенную</a></li>
+            <li><a href="http://www.linux.org.ru/forum/development/10269024">Ссылка</a></li>
+          </ul>
+        <br></div>
+      </div>
+</div>
+</article>
+
+<script type="text/javascript">
+  $script.ready('lorjs', function () {
+    topic_memories_form_setup(248051, true, 10269024, "g6yxVbuHE0zTo34Fnm1IRw==");
+    topic_memories_form_setup(0, false, 10269024, "g6yxVbuHE0zTo34Fnm1IRw==");
+  });
+</script>
+<div class="nav">
+  <div class="grid-row">
+    <div class="grid-3-1">
+      <table>
+        <tbody><tr valign="middle">
+          <td style="padding-right: 5px">
+              <a href="http://www.linux.org.ru/forum/development/10268891" rel="prev">←</a>
+            </td>
+            <td class="hideon-phone" align="left" valign="top">
+              <a href="http://www.linux.org.ru/forum/development/10268891" rel="prev">
+                YouCompleteMe не может найти completer</a>
+            </td>
+          </tr>
+      </tbody></table>
+    </div>
+    <div class="grid-3-2">
+    </div>
+    <div class="grid-3-3">
+      <table align="right">
+          <tbody><tr align="right" valign="middle">
+            <td class="hideon-phone">
+              <a href="http://www.linux.org.ru/forum/development/10269072" rel="next">
+                Bean Validation: validateValue</a>
+            </td>
+            <td style="padding-left: 5px" align="right" valign="middle">
+              <a href="http://www.linux.org.ru/forum/development/10269072" rel="next">→</a>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div>
+  </div><div class="comment" id="comments" style="padding-top: 0.5em">
+
+<article itemtype="http://schema.org/UserComments" id="comment-10269105" itemprop="comment" class="msg" itemscope="itemscope"><div class="title"></div><div class="msg-container"><div class="userpic"><img class="photo" src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/8992c1f39b56526f6a111f7032976f42.jpeg" height="150" width="150"></div><div class="msg_body message-w-userpic"><p>ЕМНИП все строки из форм тоже вытаскиваются во время lupdate, так что ничего никуда вписывать не надо.</p><div class="sign"><a itemprop="creator" href="http://www.linux.org.ru/people/E/profile">E</a> <span class="stars"></span> (<time itemprop="commentTime" datetime="2014-03-10T20:37:21.670+04:00">10.03.2014 20:37:21</time>)</div><div class="reply"><ul><li><a itemprop="replyToUrl" href="http://www.linux.org.ru/add_comment.jsp?topic=10269024&amp;replyto=10269105">Ответить<span class="hideon-phone"> на это сообщение</span></a></li>   <li><a href="http://www.linux.org.ru/forum/development/10269024?cid=10269105">Ссылка</a></li></ul></div></div></div></article><article itemtype="http://schema.org/UserComments" id="comment-10269107" itemprop="comment" class="msg" itemscope="itemscope"><div class="title"></div><div class="msg-container"><div class="userpic"><img class="photo" src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/3ab78687a69987e49f9df1d263a8f2ad.jpeg" height="150" width="150"></div><div class="msg_body message-w-userpic"><p>Оно уже тебе вписало все автоматом.<br>
+Смотри сгенерированный хэдер, там уже строки обернуты в подобие tr():</p><div class="code"><pre class="language-cpp"><code class="cpp">        actionRedo-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Redo"</span>, <span class="number">0</span>));
+        actionCut-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Cut"</span>, <span class="number">0</span>));
+        actionCopy-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Copy"</span>, <span class="number">0</span>));
+        actionPaste-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Paste"</span>, <span class="number">0</span>));
+        actionSelectAll-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Select All"</span>, <span class="number">0</span>));
+        actionFind-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Find..."</span>, <span class="number">0</span>));
+        actionFindNext-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Find Next"</span>, <span class="number">0</span>));
+        actionAddBookmark-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Add Bookmark..."</span>, <span class="number">0</span>));
+        actionManageBookmarks-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Manage Bookmarks..."</span>, <span class="number">0</span>));
+        actionReadFeeds-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Read Feeds"</span>, <span class="number">0</span>));
+        actionManageFeeds-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Manage Feeds..."</span>, <span class="number">0</span>));
+        actionAboutApplication-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"About Application..."</span>, <span class="number">0</span>));
+        actionAboutQt-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"About Qt..."</span>, <span class="number">0</span>));
+        actionZoomIn-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Zoom In"</span>, <span class="number">0</span>));
+        actionZoomOut-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Zoom Out"</span>, <span class="number">0</span>));
+        actionZoomOriginal-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Zoom Original"</span>, <span class="number">0</span>));
+        actionDelete-&gt;setText(QApplication::translate(<span class="string">"Otter::MainWindow"</span>, <span class="string">"Delete"</span>, <span class="number">0</span>));</code></pre></div><p>Тебе остается лишь добавить в твой проектный «*.pro»-файл такие строки:</p><div class="code"><pre class="no-highlight"><code>TRANSLATIONS += appname_en.ts \
+    appname_ru.ts \
+    appname_es.ts</code></pre></div><p>Потом запустить lupdate (Qt Creator -&gt; Tools -&gt; External -&gt; Linguist -&gt; Update translations (lupdate))</p><p>Открыть полученные файлы в программе Qt Linguist, перевести строки.</p><p>Затем в main.cpp добавить что-нибудь такое:</p><div class="code"><pre class="language-cpp"><code class="cpp"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])
+{
+    QApplication app(argc, argv);
+
+    QTranslator qtTranslator;
+    qtTranslator.load(<span class="string">"qt_"</span> + QLocale::system().name(),
+            QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+    app.installTranslator(&amp;qtTranslator);
+
+    QTranslator myappTranslator;
+    myappTranslator.load(<span class="string">"myapp_"</span> + QLocale::system().name());
+    app.installTranslator(&amp;myappTranslator);
+
+    ...
+    <span class="keyword">return</span> app.exec();
+}</code></pre></div><p>И приложение переведено.</p><div class="sign"><a itemprop="creator" href="http://www.linux.org.ru/people/EXL/profile">EXL</a> <span class="stars"></span> (<time itemprop="commentTime" datetime="2014-03-10T20:37:43.924+04:00">10.03.2014 20:37:43</time>)</div><div class="reply"><ul><li><a itemprop="replyToUrl" href="http://www.linux.org.ru/add_comment.jsp?topic=10269024&amp;replyto=10269107">Ответить<span class="hideon-phone"> на это сообщение</span></a></li>   <li><a href="http://www.linux.org.ru/forum/development/10269024?cid=10269107">Ссылка</a></li></ul></div></div></div></article><article itemtype="http://schema.org/UserComments" id="comment-10269584" itemprop="comment" class="msg" itemscope="itemscope"><div class="title">Ответ на: <a data-samepage="samePage" href="http://www.linux.org.ru/forum/development/10269024?cid=10269107">комментарий</a> от EXL <time itemprop="false" datetime="2014-03-10T20:37:43.924+04:00">10.03.2014 20:37:43</time></div><div class="msg-container"><div class="userpic"><img class="photo" src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/a69ac74e63fcdc09e2d8a1ae36cadb60.png" height="150" width="150"></div><div class="msg_body message-w-userpic"><p>Спасибо за подробную информацию.<br>
+Лингвист сам не переводит на небходимый язык?<br>
+Есть ли в интернете ресурс с готовыми типовыми фразами перевода интерфейса программы на разных языках мира?</p><div class="sign"><a itemprop="creator" href="http://www.linux.org.ru/people/mishapk/profile">mishapk</a> <span class="stars"></span> (<time itemprop="commentTime" datetime="2014-03-10T22:35:27.905+04:00">10.03.2014 22:35:27</time>)</div><div class="reply"><ul><li><a itemprop="replyToUrl" href="http://www.linux.org.ru/add_comment.jsp?topic=10269024&amp;replyto=10269584">Ответить<span class="hideon-phone"> на это сообщение</span></a></li>   <li><a href="http://www.linux.org.ru/forum/development/10269024?cid=10269584">Ссылка</a></li></ul></div></div></div></article><article itemtype="http://schema.org/UserComments" id="comment-10269618" itemprop="comment" class="msg" itemscope="itemscope"><div class="title">Ответ на: <a data-samepage="samePage" href="http://www.linux.org.ru/forum/development/10269024?cid=10269584">комментарий</a> от mishapk <time itemprop="false" datetime="2014-03-10T22:35:27.905+04:00">10.03.2014 22:35:27</time></div><div class="msg-container"><div class="userpic"><img class="photo" src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/3ab78687a69987e49f9df1d263a8f2ad.jpeg" height="150" width="150"></div><div class="msg_body message-w-userpic"><div class="quote"><p>Лингвист сам не переводит на небходимый язык?<br></p></div><p>Нет, ты сам должен обработать строки, обрамленные tr();<br>
+<a href="http://i.imgur.com/6P6zGHU.png">Пример на скрине.</a></p><div class="quote"><p>Есть ли в интернете ресурс с готовыми типовыми фразами перевода интерфейса программы на разных языках мира?<br></p></div><p>Не
+ знаю про это. Если найдешь, напиши. Тоже интересно. Но большинство 
+строк интерфейса можно тупо скопипастить из «*.ts»-файлов того же 
+Linguist'a или Qt.
+А вообще там есть какой-то «Phrase Book», возможно через него как-то.</p><div class="sign"><a itemprop="creator" href="http://www.linux.org.ru/people/EXL/profile">EXL</a> <span class="stars"></span> (<time itemprop="commentTime" datetime="2014-03-10T22:44:13.566+04:00">10.03.2014 22:44:13</time>)</div><div class="reply"><ul><li><a itemprop="replyToUrl" href="http://www.linux.org.ru/add_comment.jsp?topic=10269024&amp;replyto=10269618">Ответить<span class="hideon-phone"> на это сообщение</span></a></li>   <li><a href="http://www.linux.org.ru/forum/development/10269024?cid=10269618">Ссылка</a></li></ul></div></div></div></article></div>
+
+<div class="nav">
+  <div class="grid-row">
+    <div class="grid-3-1">
+      <table>
+        <tbody><tr valign="middle">
+          <td style="padding-right: 5px">
+              <a href="http://www.linux.org.ru/forum/development/10268891" rel="prev">←</a>
+            </td>
+            <td class="hideon-phone" align="left" valign="top">
+              <a href="http://www.linux.org.ru/forum/development/10268891" rel="prev">
+                YouCompleteMe не может найти completer</a>
+            </td>
+          </tr>
+      </tbody></table>
+    </div>
+    <div class="grid-3-2">
+      <a title="Форум - Development" href="http://www.linux.org.ru/forum/development/">
+          Development</a>
+    </div>
+    <div class="grid-3-3">
+      <table align="right">
+          <tbody><tr align="right" valign="middle">
+            <td class="hideon-phone">
+              <a href="http://www.linux.org.ru/forum/development/10269072" rel="next">
+                Bean Validation: validateValue</a>
+            </td>
+            <td style="padding-left: 5px" align="right" valign="middle">
+              <a href="http://www.linux.org.ru/forum/development/10269072" rel="next">→</a>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div>
+  </div></div>
+
+<hr>
+    <form action="/forum/development/10269024" method="POST">
+    <input name="csrf" value="g6yxVbuHE0zTo34Fnm1IRw==" type="hidden">
+<input name="deleted" value="1" type="hidden">
+    <input value="Показать удаленные комментарии" type="submit">
+    </form>
+    <hr>
+<section id="related-topics">
+    <h2>Похожие темы</h2>
+
+    <div id="related-topics-list">
+      <ul>
+          <li>
+              <span class="group-label">Форум</span>
+              <a href="http://www.linux.org.ru/forum/talks/8363441">Qt текст-редактор</a> (2012)
+            </li>
+          <li>
+              <span class="group-label">Новости</span>
+              <a href="http://www.linux.org.ru/news/opensource/7784841">Qt 4.8.2</a> (2012)
+            </li>
+          <li>
+              <span class="group-label">Форум</span>
+              <a href="http://www.linux.org.ru/forum/development/8415849">Qt Pimpl</a> (2012)
+            </li>
+          <li>
+              <span class="group-label">Галерея</span>
+              <a href="http://www.linux.org.ru/gallery/screenshots/9419420">qt mix</a> (2013)
+            </li>
+          <li>
+              <span class="group-label">Форум</span>
+              <a href="http://www.linux.org.ru/forum/talks/6330692">[Qt][Java] Поругайте мне Qt Jambi</a> (2011)
+            </li>
+          </ul>
+      <ul>
+          <li>
+              <span class="group-label">Форум</span>
+              <a href="http://www.linux.org.ru/forum/development/7659891">Qt Creator + Qt Designer + Pure C</a> (2012)
+            </li>
+          <li>
+              <span class="group-label">Новости</span>
+              <a href="http://www.linux.org.ru/news/linux-general/9384272">Будущее проектов Razor-Qt и LXDE-Qt</a> (2013)
+            </li>
+          <li>
+              <span class="group-label">Новости</span>
+              <a href="http://www.linux.org.ru/news/opensource/4290998">Qt 4.6 и Qt Creator 1.3</a> (2009)
+            </li>
+          <li>
+              <span class="group-label">Новости</span>
+              <a href="http://www.linux.org.ru/news/opensource/3517423">Qt Software прекращает развитие Qt Jambi</a> (2009)
+            </li>
+          <li>
+              <span class="group-label">Форум</span>
+              <a href="http://www.linux.org.ru/forum/development/8915130">Qt и демоны</a> (2013)
+            </li>
+          </ul>
+      </div>
+  </section>
+<div style="display: none">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form novalidate="novalidate" method="POST" action="/add_comment.jsp" id="commentForm">
+  <input name="csrf" value="g6yxVbuHE0zTo34Fnm1IRw==" type="hidden">
+
+  
+
+  <input name="topic" value="10269024" type="hidden">
+  
+    <input name="replyto" value="0" type="hidden">
+  
+  
+  
+
+  <label for="title">Заглавие:</label>
+  <input id="title" name="title" type="text"><br>
+
+  <label for="msg">Сообщение:</label>
+
+  <textarea id="msg" required="" name="msg"></textarea><br>
+  <font size="2">Пустая строка (два раза Enter) начинает новый абзац.<br>
+                 Знак '&gt;' в начале абзаца выделяет абзац курсивом цитирования</font><br>
+  <font size="2"><b>Внимание:</b> <a href="http://www.linux.org.ru/wiki/en/Lorcode" target="_blank" title="[br] - перевод строки
+
+[b]жирный текст[/b]
+
+[i]курсив[/i]
+
+[u]подчёркнутый текст[/u]
+
+[s]зачёркнутый текст[/s]
+
+[em]emphasis[/em]
+
+[strong]stronger emphasis[/strong]
+
+[pre]preformatted text[/pre]
+
+[user]maxcom[/user] - ссылка на профиль пользователя. 
+При использовании этого тега упомянутому пользователю приходит уведомление
+
+[code]код[/code]
+
+[inline]Строчное оформление кода[/inline]
+
+Цитата:
+[quote]цитата[/quote] или
+[quote='название цитаты']цитата[/quote] или
+&gt;&gt;цитата
+
+Ссылка:
+[url]http://www.linux.org.ru/[/url] 
+можно с параметром, например: 
+[url=http://www.example.com/]Сюда![/url]">прочитайте описание разметки LORCODE</a></font><br>
+
+  <br>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <button type="submit">Поместить</button>
+  <button type="submit" name="preview">Предпросмотр</button>
+  
+    
+      
+      
+      
+      
+        <button type="reset" name="cancel" id="cancelButton">Отменить</button>
+      
+    
+  
+</form>
+</div>
+</div>
+<footer id="ft"><button id="ft-back-button">Вверх</button>
+
+<p id="ft-info">
+  <a href="http://www.linux.org.ru/about">О Сервере</a> -
+  <a href="http://www.linux.org.ru/rules.jsp">Правила форума</a><br>
+  <a href="http://www.linux.org.ru/">http://www.linux.org.ru/</a>
+  </p>
+
+<div id="ft-buttons">
+<!-- begin of Top100 logo -->
+  <a href="http://top100.rambler.ru/home?id=29833" target="_blank"><img src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/banner-88x31-rambler-black2.gif" alt="Rambler's Top100" height="31" width="88"></a>
+  <!-- end of Top100 logo -->
+    <!-- Rating@Mail.ru logo -->
+    <a target="_top" href="http://top.mail.ru/jump?from=71642">
+    <img src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/counter.gif" alt="Рейтинг@Mail.ru" height="31" width="88"></a>
+    <!-- //Rating@Mail.ru logo -->
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2184304-1");
+pageTracker._setCustomVar(1, "Authorized", "true");
+pageTracker._setCustomVar(2, "Style", "tango");
+pageTracker._setSiteSpeedSampleRate(10);
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- begin of Top100 code -->
+    <script id="top100Counter" type="text/javascript" src="QT%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D1%82%D0%BE%D0%B2%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%20TR%20%D0%B2%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%BD%D0%B5%D1%80%D0%B5%20-%20Development%20-%20%D0%A4%D0%BE%D1%80%D1%83%D0%BC_files/top100.js"></script><noscript><img src="http://counter.rambler.ru/top100.cnt?29833" alt="" width="1" height="1"/></noscript>
+    <!-- end of Top100 code -->
+</footer>
+
+</body></html>
