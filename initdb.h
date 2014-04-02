@@ -1,3 +1,6 @@
+/*
+* Init DataBase Module
+*/
 #ifndef INITDB_H
 #define INITDB_H
 #include <QtSql>
